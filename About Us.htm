@@ -6,33 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- SEO -->
+    <meta name="keyword" content="Food, Blog, New York City, About Us">
+    <link rel="stylesheet" href="nav.css" type="text/css" />
 </head>
 
-<body>
-    <h1>About <a href="index.htm">EGGEAT</a></h1>
-    <nav>
-        <a href="About Us.htm">About Us</a>
-        <a href="Chinese.htm">Chinese</a>
-        <a href="Japanese.htm">Japanese</a>
-        <a href="Korean.htm">Korean</a>
-        <a href="Italian.htm">Italian</a>
-        <a href="Mexican.htm">Mexican</a>
-        <a href="Special Offers.htm">Special Offers</a>
-        <a href="Site Map.htm">Special Offers</a>
-        <a href="Contact Us.htm">Contact Us</a>
-    </nav>
-    <h1><iframe width="560" height="315" src="https://www.youtube.com/embed/rQZhQdg46do" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </h1>
+<style>
+    p#found {
+        font-family: monospace;
+        font-size: 20px
+    }
 
-    <p>
-        EGGEAT is a New York food guide for all the foodies out there. EGGEAT's founder, Denise Ho, once interned in New York and fell in love with everything about New York. Her mission is to create a trustworthy platform for people who are travelling to New York to decide their restaurants within 30 seconds. 
+    p#den {
+        font-family: monospace;
+        font-size: 20px;
+    }
+
+    div#eggeat {
+        font-family: monospace;
+        text-align: center;
+        font-size: 68px;
+        background-image: url(Images/back2.jpg);
+        height: 400px;
+        margin: 0px 100px 100px 100px
+    }
+
+    h1 {
+        margin-top: -350px;
+        font-size: 130px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    h2 {
+        padding-top: 20px;
+        font-size: 130px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-bottom:0
+    }
+
+    div#me {
+        text-align: center
+    }
+
+    p#denise {
+        font-family: monospace;
+        font-size: 15px
+    }
+
+    p#in {
+        text-align: center;
+        font-size: 20px;
+        font-style: italic;
+        padding-top:-10px;
+        font-weight:bold;
+        margin-left:100px;
+        margin-right:100px
+    }
+</style>
+
+
+<script>
+    // Onmouseover Onmouseout
+    function show(x) {
+        let den = document.getElementById("den");
+
+        if (x == "den") {
+            den.src = "Images/Denise2.jpg"
+        }
+        else {
+            den.src = "Images/Denise.jpg"
+        }
+
+    }
+
+    // Change style of element
+    function changeColor() {
+        let denise = document.getElementById("denise");
+
+        denise.style.color = "#1E90FF"
+
+    }
+
+</script>
+
+<body>
+    <div id="nav">
+        <nav>
+            <a class="navi" href="index.htm">EggEat</a>
+            <a class="navi" href="About Us.htm">About Us</a>
+            <a class="navi" href="Chinese.htm">Chinese</a>
+            <a class="navi" href="Japanese.htm">Japanese</a>
+            <a class="navi" href="Korean.htm">Korean</a>
+            <a class="navi" href="Italian.htm">Italian</a>
+            <a class="navi" href="Site Map.htm">Site Map</a>
+            <a class="navi" href="Contact Us.htm">Contact Us</a>
+            <a class="navi" href="credit.htm">Credits</a>
+        </nav>
+    </div>
+    <div id="eggeat"></div>
+    <h1>About Us</h1>
+
+    <h2><iframe width="560" height="315" src="https://www.youtube.com/embed/rQZhQdg46do" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </h2>
+
+    <p id="in">
+        EGGEAT is a New York food guide for all the foodies out there. EGGEAT's founder, Denise Ho, once interned in New
+        York and fell in love with everything about New York. Her mission is to create a trustworthy platform for people
+        who are travelling to New York to decide their restaurants within 30 seconds.
     </p>
-<br>
-    <p>
-        Founder: Denise Ho</P>
-     <p>   <img src="Images/Denise.jpg" width="300px">
-    </p>
+    <br>
+    <div id="me">
+        <p onclick="changeColor()" id="found">Founder:</p>
+        <p id="denise">Denise Ho</P>
+        <p> <img onmouseover="show(this.id)" onmouseout="show()" id="den" src="Images/Denise.jpg" width="300px">
+        </p>
+    </div>
 
 
 </body>

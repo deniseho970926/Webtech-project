@@ -1,23 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- SEO -->
+    <meta name="keyword" content="Food, Blog, Italian, New York City">
+    <link rel="stylesheet" href="nav.css" type="text/css" />
 </head>
-<body>
-    <h1>Italian Food with <a href="index.htm">EGGEAT</a></h1>
-    <nav>
-            <a href="About Us.htm">About Us</a>
-            <a href="Chinese.htm">Chinese</a>
-            <a href="Japanese.htm">Japanese</a>
-            <a href="Korean.htm">Korean</a>
-            <a href="Italian.htm">Italian</a>
-            <a href="Mexican.htm">Mexican</a>
-            <a href="Special Offers.htm">Special Offers</a>
-            <a href="Site Map.htm">Site Map</a>
-            <a href="Contact Us.htm">Contact Us</a>
+
+<style>
+    h2#msg {
+        position: absolute;
+        color: #DA70D6;
+        font-family: monospace;
+        width: auto;
+
+    }
+
+    div#lyric {
+        border: 1px;
+        height: 46px;
+        margin-left: 1100px;
+        margin-top: -438px;
+        margin-right: 20px;
+        background-color: rgb(247, 202, 201)
+    }
+
+    div#eggeat {
+        font-family: monospace;
+        text-align: center;
+        font-size: 68px;
+        background-image: url(Images/back2.jpg);
+        height: 400px;
+        margin: 0px 100px 100px 100px
+    }
+
+    h1 {
+        margin-top: -350px;
+        font-size: 130px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    div#para {
+
+        margin-top: 500px
+    }
+
+    h3{
+        text-align:center;
+        font-size:25px
+    }
+    
+    h4,h5{
+        text-align:center
+    }
+</style>
+
+<script>
+    // Lyrics
+    const lyrics = [
+        "Chinese",
+        "Japanese",
+        "Korean",
+        "Italian",
+    ];
+
+    let p = 1135;
+    let i = 0;
+    function doScroll() {
+        let x = document.getElementById("msg");
+        x.innerHTML = lyrics[i];
+        x.style.left = p + "px"
+        if (p > 1530) {
+            p = 1135;
+            i++;
+            if (i == lyrics.length) {
+                i = 0;
+            }
+        }
+        else {
+            p = p + 1;
+        }
+        setTimeout("doScroll()", -2);
+    }
+
+</script>
+
+<body onload="doScroll()">
+    <div id="nav">
+        <nav>
+            <a class="navi" href="index.htm">EggEat</a>
+            <a class="navi" href="About Us.htm">About Us</a>
+            <a class="navi" href="Chinese.htm">Chinese</a>
+            <a class="navi" href="Japanese.htm">Japanese</a>
+            <a class="navi" href="Korean.htm">Korean</a>
+            <a class="navi" href="Italian.htm">Italian</a>
+            <a class="navi" href="Site Map.htm">Site Map</a>
+            <a class="navi" href="Contact Us.htm">Contact Us</a>
+            <a class="navi" href="credit.htm">Credits</a>
         </nav>
+    </div>
+
+    <div id="eggeat"></div>
+    <h1>Italian Food</h1>
+    </div>
+
+    <div id="lyric">
+        <h2 id="msg"></h2>
+    </div>
+
+    <div id="para">
+        <p>
+            <h3>1. Olio e Piú</h3>
+            <h4><br>$$
+                <br>Pizza, Italian, Breakfast and Brunch
+                <br>3 Greenwich Ave, New York, NY 10014
+                <br>(212) 243-6546
+                <br>Naples meets NYC at this trattoria with thin-crust pizza, Italian wines & ample sidewalk
+                seating.</h4>
+                <h5><br><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.2806409116697!2d-74.00200884889547!3d40.73384987922805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25996bd0915fd%3A0x294a27aedc2f4135!2sOlio%20e%20Pi%C3%BA!5e0!3m2!1sen!2sus!4v1575739974950!5m2!1sen!2sus"
+                width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+        </p>
+
+        <p>
+            <h3>2. Lillo Cucina Italiana</h3>
+            <h4> <br>$$
+                <br>Cafes, Italian
+                <br>331 Henry St, Brooklyn, NY 11201
+                <br>(347) 763-0899
+                <br>Compact, cash-only Italian trattoria with made-to-order dishes in a six-table, alcohol-free
+                space.</h4>
+                <h5> <br> <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.262549463349!2d-73.99847174889676!3d40.69021497923287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a450aa535b7%3A0xa2aac7a7f0d8880a!2sLillo%20Cucina%20Italiana!5e0!3m2!1sen!2sus!4v1575740068046!5m2!1sen!2sus"
+                width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+        </p>
+
+        <p>
+            <h3>3. Del Posto</h3>
+            <h4> <br>$$$$
+                <br>Korean
+                <br>85 10th Ave, New York, NY 10011
+                <br>(212) 497-8090
+                <br>Updated Italian classics in palatial surroundings from Joseph & Lidia Bastianich.</h4>
+                <h5> <br><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8507430069276!2d-74.01012624889519!3d40.743309679226996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259c0b2265971%3A0x10be5b78c2b9222!2sDel%20Posto!5e0!3m2!1sen!2sus!4v1575740176200!5m2!1sen!2sus"
+                width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+        </p>
+
+
+
+        <p>
+            <h3>4. L’Artusi</h3>
+            <h4> <br>$$$
+                <br>Italian, Cocktail Bars
+                <br>228 W 10th St, New York, NY 10014
+                <br>(212) 255-5757
+                <br>Italian small plates are matched by an extensive wine list at this bi-level restaurant.<h4>
+                <h5><br><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.2807545125584!2d-74.00733584889544!3d40.73384737922815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25994a2220ac7%3A0xb5043ebd59fcdcb6!2sL&#39;Artusi!5e0!3m2!1sen!2sus!4v1575740281886!5m2!1sen!2sus"
+                width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h4>
+        </p>
+
+        <p>
+            <h3>5. Lupa</h3>
+            <h4> <br>$$$
+                <br>Italian
+                <br>170 Thompson St, New York, NY 10012
+                <br>(212) 982-5089
+                <br>Small Italian eatery serving Roman fare alongside an all-Italian wine list.</h4>
+                <h5><br><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.5620126712456!2d-74.00225294889569!3d40.72765737922874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598e03c36a71%3A0xf2802b273cb87066!2sLupa!5e0!3m2!1sen!2sus!4v1575740355936!5m2!1sen!2sus"
+                width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+
+            <p>
+                <h3>6. Gaia Italian Café</h3>
+                <h4> <br>$
+                    <br>Italian
+                    <br>251 E Houston St, New York, NY 10002
+                    <br>(646) 350-3977
+                    <br>This cafe serves up authentic Italian bites in a minimalist, cozy setting with free WiFi.</h4>
+                    <h5> <br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.8330276305587!2d-73.98752014889581!3d40.721692079229406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598230fa073d%3A0x2515c1084b58591d!2sGaia%20Italian%20Caf%C3%A8!5e0!3m2!1sen!2sus!4v1575740473147!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+            </p>
+
+            <p>
+                <h3>7. Trattoria Trecolori</h3>
+                <h4> <br>$$
+                    <br>Korean, Bars, Soup
+                    <br>254 W 47th St, New York, NY 10036
+                    <br>(212) 997-4540
+                    <br>Bustling Italian spot serving classic red-sauce dishes in a warm setting with a bar & exposed
+                    brick.</h4>
+                    <h5><br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.092183460073!2d-73.98893614889471!3d40.75999717922533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258542d70ea61%3A0xaa16d70d94dcf5b2!2sTrattoria%20Trecolori!5e0!3m2!1sen!2sus!4v1575740633706!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+            </p>
+
+            <p>
+                <h3>8. Rubirosa</h3>
+                <h4> <br>$$
+                    <br>Italian Pizza
+                    <br>235 Mulberry St, New York, NY 10012
+                    <br>(212) 965-0500
+                    <br>Neighborhood Italian spot serving reinvented Italian-American classics & pizzas in a dark
+                    space.</h4>
+                    <h5><br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.7848313158524!2d-73.9984270488958!3d40.72275297922922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f361dc3b3%3A0xea0bcb0a8807f54c!2sRubirosa!5e0!3m2!1sen!2sus!4v1575740701300!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+            </p>
+
+            <p>
+                <h3> 9. Nino’s 46</h3>
+                <h4> <br>$$
+                    <br>Italian, Salad, Seafood
+                    <br>39 W 46th St, New York, NY 10036
+                    <br>(212) 719-4015
+                    <br>Sleek, low-key spot for contemporary Italian fare, wood-fired pizza & creative lunch
+                    sandwiches.</h4>
+                    <h5><br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2329142037142!2d-73.98270244889483!3d40.75690167922555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258ffaefdba21%3A0x3836e7f8c81f3ae4!2sNino&#39;s%2046!5e0!3m2!1sen!2sus!4v1575740827253!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+            </p>
+            <p>
+                <h3>10. Antica Ristorante</h3>
+                <h4> <br>$$$$
+                    <br>Italian
+                    <br>8 Stone St, New York, NY 10004
+                    <br>(646) 439-2200
+                    <br>Tableside presentations are offered at this upscale Italian spot with free antipasti, pastas &
+                    more.</h4>
+                    <h5><br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.6412936876486!2d-74.01446434889637!3d40.70389707923145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a140a6e4413%3A0x207f088d137a8c86!2s8%20Stone%20St%2C%20New%20York%2C%20NY%2010004!5e0!3m2!1sen!2sus!4v1575740942849!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+            </p>
+
+    </div>
+
 </body>
+
 </html>

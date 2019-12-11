@@ -1,23 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- SEO -->
+    <meta name="keyword" content="Food, Blog, Korean, New York City">
+    <link rel="stylesheet" href="nav.css" type="text/css" />
 </head>
-<body>
-    <h1>Korean Food with <a href="index.htm">EGGEAT</a></h1>
-    <nav>
-            <a href="About Us.htm">About Us</a>
-            <a href="Chinese.htm">Chinese</a>
-            <a href="Japanese.htm">Japanese</a>
-            <a href="Korean.htm">Korean</a>
-            <a href="Italian.htm">Italian</a>
-            <a href="Mexican.htm">Mexican</a>
-            <a href="Special Offers.htm">Special Offers</a>
-            <a href="Site Map.htm">Site Map</a>
-            <a href="Contact Us.htm">Contact Us</a>
+
+<style>
+    h2#msg {
+        position: absolute;
+        color: #DA70D6;
+        font-family: monospace;
+        width: auto;
+
+    }
+
+    div#lyric {
+        border: 1px;
+        height: 46px;
+        margin-left: 1100px;
+        margin-top: -438px;
+        margin-right: 20px;
+        background-color: rgb(247, 202, 201)
+    }
+
+    div#eggeat {
+        font-family: monospace;
+        text-align: center;
+        font-size: 68px;
+        background-image: url(Images/back2.jpg);
+        height: 400px;
+        margin: 0px 100px 100px 100px
+    }
+
+    h1 {
+        margin-top: -350px;
+        font-size: 130px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    div#para {
+
+        margin-top: 500px
+    }
+    h3{
+        text-align:center;
+        font-size:25px
+    }
+    
+    h4,h5{
+        text-align:center
+    }
+</style>
+
+<script>
+    // Lyrics
+    const lyrics = [
+        "Chinese",
+        "Japanese",
+        "Korean",
+        "Italian",
+    ];
+
+    let p = 1135;
+    let i = 0;
+    function doScroll() {
+        let x = document.getElementById("msg");
+        x.innerHTML = lyrics[i];
+        x.style.left = p + "px"
+        if (p > 1530) {
+            p = 1135;
+            i++;
+            if (i == lyrics.length) {
+                i = 0;
+            }
+        }
+        else {
+            p = p + 1;
+        }
+        setTimeout("doScroll()", -2);
+    }
+
+</script>
+
+<body onload="doScroll()">
+    <div id="nav">
+        <nav>
+            <a class="navi" href="index.htm">EggEat</a>
+            <a class="navi" href="About Us.htm">About Us</a>
+            <a class="navi" href="Chinese.htm">Chinese</a>
+            <a class="navi" href="Japanese.htm">Japanese</a>
+            <a class="navi" href="Korean.htm">Korean</a>
+            <a class="navi" href="Italian.htm">Italian</a>
+            <a class="navi" href="Site Map.htm">Site Map</a>
+            <a class="navi" href="Contact Us.htm">Contact Us</a>
+            <a class="navi" href="credit.htm">Credits</a>
         </nav>
+    </div>
+    <div id="eggeat"></div>
+    <h1>Korean Food</h1>
+
+
+    <div id="lyric">
+        <h2 id="msg"></h2>
+    </div>
+
+
+    <div id="para">
+        <p>
+            <h3>1. Barn Joo 35</h3>
+                <h4> <br>$$
+                    <br>Korean, Gastropubs, Tapas/Small
+                    <br>34 W 35th St, New York, NY 10001
+                    <br>(212) 564-4430
+                    <br>Hip, contemporary Korean gastropub serving thoughtfully sourced small plates & soju
+                    cocktails.</span>
+                    <h5> <br> <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5624683043034!2d-73.98800098459385!3d40.749652079327774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a99dda307f%3A0x62b6b9e286021578!2sBarn%20Joo%2035!5e0!3m2!1sen!2sus!4v1575738736403!5m2!1sen!2sus"
+                            width="200" height="200" frameborder="0" style="border:0;"
+                            allowfullscreen=""></iframe></h5>
+        </p>
+
+        <p>
+            <h3>2. Jongro BBQ</h3>
+            <h4>  <br>$$
+                <br>Korean, Barbeque, Beer Bar
+                <br>22 W 32nd St Fl 2, New York, NY 10001
+                <br>(212) 473-2233
+                <br>Korean BBQ & other traditional dishes served in a casual, open-timbered space with in-table
+                grills.</h4>
+                <h5> <br> <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.660394224271!2d-73.98907058459396!3d40.74749767932808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a8ef657243%3A0x9185d801317e2d9d!2sJongro%20BBQ!5e0!3m2!1sen!2sus!4v1575738877594!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+        </p>
+
+        <p>
+            <h3>3. Atomix</h3>
+                <h4> <br>$$$$
+                <br>Korean
+                <br>104 E 30th St, New York, NY 10016
+                <br>(646) 476-7217
+                <br>Upscale Korean restaurant offering a chef's tasting menu with beverage pairings in chic
+                environs.</h4>
+                <h5> <br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.808147734616!2d-73.98500864889513!3d40.74424687922692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259081e80b9dd%3A0xcbba8bbce70e7645!2sATOMIX!5e0!3m2!1sen!2sus!4v1575739841820!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+        </p>
+
+
+
+        <p>
+            <h3>4. Hangawi</h3>
+                <h4>  <br>$$$
+                <br>Vegeterian, Korean
+                <br>12 E 32nd St, New York, NY 10016
+                <br>(212) 213-0077
+                <br>Upscale menu of creative, gourmet Korean fare in a tranquil space where shoes come off at the
+                door.</h4>
+                <h5> <br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.701137856961!2d-73.986950384594!3d40.74660127932813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a86a3a29b5%3A0x79a2bb2ad7d70e00!2sHangawi!5e0!3m2!1sen!2sus!4v1575739167192!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+        </p>
+
+        <p>
+            <h3>5. The Jin</h3>
+            <h4> <br>$$
+                <br>Korean, Chicken Wings, Ramen
+                <br>856 10th Ave, New York, NY 10019
+                <br>(212) 223-3488</h4>
+                <h5> <br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.7034425427314!2d-73.9909076845933!3d40.768546879325804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259fce7da31eb%3A0x1b28701eeae6be75!2sThe%20Jin!5e0!3m2!1sen!2sus!4v1575739294476!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+        </p>
+
+        <p>
+            <h3>6. Itaewon</h3>
+                <h4> <br>$$
+                <br>Gastropubs, Korean
+                <br>28W E 32nd St 2nd Fl, New York, NY 10001
+                <br>(212) 967-2228
+                <br>Trendy Koreatown bar & eatery offering inventive Korean fusion eats, soju cocktails & DJ
+                nights.</h4>
+                <h5> <br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.656594356466!2d-73.98928628459402!3d40.747581279327996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a8e5c07b5f%3A0x535c8636b367d677!2sItaewon%20Gastropub!5e0!3m2!1sen!2sus!4v1575739387391!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+        </p>
+
+        <p>
+            <h3>7. Soju Haus</h3>
+                <h4> <br>$$
+                <br>Korean, Bars, Soup
+                <br>315 5th Ave FL 2, New York, NY 10016
+                <br>(212) 213-2177
+                <br>Spacious restaurant focusing on pairing classic Korean dishes with soju & other Korean
+                liquors.</h4>
+                <h5> <br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.7034425427314!2d-73.9909076845933!3d40.768546879325804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259fce7da31eb%3A0x1b28701eeae6be75!2sThe%20Jin!5e0!3m2!1sen!2sus!4v1575739294476!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+        </p>
+
+        <p>
+            <h3>8. Cho Dang Gol Korean Restaurant</h3>
+                <h4> <br>$$
+                <br>Korean
+                <br>55 W 35th St, New York, NY 10001
+                <br>(212) 695-8222
+                <br>This easygoing Korean venue offers soups & stews showcasing homemade tofu, plus other comfort
+                food.</h4>
+                <h5> <br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.534995188908!2d-73.98855318459384!3d40.750256479327824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a963364753%3A0xcf37071ffd9c5c2a!2sCho%20Dang%20Gol!5e0!3m2!1sen!2sus!4v1575739632156!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+        </p>
+
+        <p>
+            <h3>9. Kang Ho Dong Baekjong</h3>
+                <h4> <br>$$$
+                <br>Korean Barbeque
+                <br>1 E 32nd St, New York, NY 10016
+                <br>(212) 966-9839
+                <br>This branch of a South Korea-based chain offers table-grilled Korean BBQ, plus noodles &
+                cocktails.</h4>
+                <h5> <br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.7034425427314!2d-73.9909076845933!3d40.768546879325804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259fce7da31eb%3A0x1b28701eeae6be75!2sThe%20Jin!5e0!3m2!1sen!2sus!4v1575739294476!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe></h5>
+        </p>
+        <p>
+            <h3>10. Jungsik</h3>
+                <h4> <br>$$$$
+                <br>Korean Fine Dining
+                <br>2 Harrison St, New York, NY 10013
+                <br>(212) 219-0900
+                <br>Innovative, high-end Korean fare served in elegant, contemporary digs with an extensive wine
+                list.</h4>
+                <h5> <br><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9631965609287!2d-74.0112637845948!3d40.71882667933115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1fd1cd24a5%3A0xe06d9ff42b6b6f23!2sJungsik!5e0!3m2!1sen!2sus!4v1575739047797!5m2!1sen!2sus"
+                    width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe</h5>
+        </p>
+
+    </div>
+
+
+
 </body>
+
 </html>

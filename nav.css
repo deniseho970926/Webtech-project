@@ -1,0 +1,53 @@
+a.navi{
+    text-decoration: none;
+    margin-left: 10px;
+    color: black
+
+}
+
+a:visited{
+    color: black
+
+}
+a.navi:hover{
+    background-color:white;
+    padding-top:15px;
+    padding-left:2px;
+    padding-right:2px;
+    padding-bottom:16px
+}
+
+nav{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:15px;
+    
+}
+
+  
+
+#nav{
+    background-color: rgb(247,202,201);
+    padding: 15px 10px 15px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-8px
+    
+}
+
+a#egg{
+    font-size:18px
+}
+
+div#food{
+    text-align:center;
+
+
+}
+
+span.rest{
+    text-align:center
+}
+
+span.ha{
+    text-align:center
+}

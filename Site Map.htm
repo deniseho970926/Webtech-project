@@ -1,43 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- SEO -->
+    <meta name="keyword" content="Food, Blog, New York City, Site Map">
+    <link rel="stylesheet" href="nav.css" type="text/css" />
 </head>
+
+<style>
+    p#help {
+        font-family: monospace
+    }
+
+    li.yes {
+        display: inline-block;
+        font-family: monospace;
+        list-style: none
+    }
+
+
+    div#eggeat {
+        font-family: monospace;
+        text-align: center;
+        font-size: 68px;
+        background-image: url(Images/back2.jpg);
+        height: 400px;
+        margin: 0px 100px 100px 100px
+    }
+
+    h1 {
+        margin-top: -350px;
+        font-size: 130px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    div#egg {
+        margin-top: 130px
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: -65px
+    }
+
+    a {
+        text-decoration: none;
+        padding-top: 4px;
+        color:black
+    }
+
+    a:visited {
+        color: black
+    }
+
+    a:hover {
+        background-color: pink;
+        color: black
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+    }
+
+    tr#ha {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: right;
+        font-size: 20px;
+        text-decoration: underline
+    }
+
+    ul.first {
+        list-style: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    p#honor {
+        font-style: italic;
+        margin-top: 60px
+    }
+
+    button {
+        margin-left: auto;
+
+    }
+    body{
+        margin-top:-10px
+    }
+</style>
+
+    
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+        $(function () {
+            $("h2").click(function () {
+                $("h1").css("color", "white");
+                $("h1").css("font-style", "italic")
+
+            })
+
+        });
+
+    </script>
+
 <body>
-    <h1>Site Map of <a href="index.htm">EGGEAT</a></h1>
-    <nav>
-            <a href="About Us.htm">About Us</a>
-            <a href="Chinese.htm">Chinese</a>
-            <a href="Japanese.htm">Japanese</a>
-            <a href="Korean.htm">Korean</a>
-            <a href="Italian.htm">Italian</a>
-            <a href="Mexican.htm">Mexican</a>
-            <a href="Special Offers.htm">Special Offers</a>
-            <a href="Site Map.htm">Site Map</a>
-            <a href="Contact Us.htm">Contact Us</a>
+    <div id="nav">
+        <nav>
+            <a class="navi" href="index.htm">EggEat</a>
+            <a class="navi" href="About Us.htm">About Us</a>
+            <a class="navi" href="Chinese.htm">Chinese</a>
+            <a class="navi" href="Japanese.htm">Japanese</a>
+            <a class="navi" href="Korean.htm">Korean</a>
+            <a class="navi" href="Italian.htm">Italian</a>
+            <a class="navi" href="Site Map.htm">Site Map</a>
+            <a class="navi" href="Contact Us.htm">Contact Us</a>
+            <a class="navi" href="credit.htm">Credits</a>
         </nav>
-<hr>
-<ul>About EGGEAT
-    <li><a href="index.htm">Home Page</a></li>
-    <li><a href="About Us.htm">About Us</a></li>
-    <li><a href="Contact Us.htm">Contact Us</a></li>
-</ul>
+    </div>
+    <div id="eggeat"></div>
+    <h1>Site Map</h1>
+    <h2>Click Me</h2>
+    <div id="egg"></div>
+    <table>
 
-<ul>Cuisines
-    <li><a href="Chinese.htm">Chinese</a></li>
-    <li><a href="Japanese.htm">Japanese</a></li>
-    <li><a href="Korean.htm">Korean</a></li>
-    <li><a href="Italian.htm">Italian</a></li>
-    <li><a href="Mexican.htm">Mexican</a></li>
-</ul>
+        <tr id="ha">
+            <th>About EGGEAT</th>
+            <th>Cuisines</th>
+        </tr>
+        <tr>
+            <td>
+                <ul class="first">
+                    <li><a href="index.htm">Home Page</a></li>
+                    <li><a href="About Us.htm">About Us</a></li>
+                    <li><a href="Contact Us.htm">Contact Us</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul class="first">
+                    <li><a href="Chinese.htm">Chinese</a></li>
+                    <li><a href="Japanese.htm">Japanese</a></li>
+                    <li><a href="Korean.htm">Korean</a></li>
+                    <li><a href="Italian.htm">Italian</a></li>
 
-<ul>The Goodies
-    <li><a href="Special Offers.htm">Special Offers</a></li>
-</ul>
+                </ul>
+            </td>
+        </tr>
 
+    </table>
+    </div>
+
+    <p id="honor">I, Yi Ni Ho, pledge my honor that I have neither received nor provided unauthorized assistance during
+        the
+        completion of this work. I have read the term project instructions and observed all the restrictions and
+        limitations specified therein.</p>
 
 </body>
+
 </html>
